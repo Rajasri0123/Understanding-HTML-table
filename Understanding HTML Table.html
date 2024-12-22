@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding HTML Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+            color: #333;
+        }
+
+        h1 {
+            color: #333;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table,th,td{
+            border: 1px solid #333;
+        }
+        th,td{
+            padding: 10px;
+            text-align: left;
+        }
+        th{
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Undestanding HTML Tables</h1>
+    <p>
+        In HTML, tables are created using the <code> &lt;table&gt; </code> tag.
+         The table is structured with rows (<code> &lt;tr&gt; </code>) and cells, 
+         which can be either header Cells. 
+         (<code>&lt; td&gt; </code>) or data cells (<code>&lt; td&gt; </code>)
+         Attributes like <code> border </code>,<code> rowspan </code>, 
+         and <code> colspan </code>can be used to enhance the tables appearence and
+         structure.
+    </p>
+    <h2>Basic Table</h2>
+    <table border="1">
+        <tr>
+            <th>Header1</th>
+            <th>Header2</th>
+            <th>Header3</th>
+        </tr>
+        <tr>
+            <td>Row1,cell1</td>
+            <td>Row1,cell2</td>
+            <td>Row1,cell3</td>
+        </tr>
+        <tr>
+            <td>Row2,cell1</td>
+            <td>Row2,cell2</td>
+            <td>Row2,cell3</td>
+        </tr>
+    </table>
+    <h2>Table with Rowspan</h2>
+    <p>The <code>rowspan</code>attribute allows a cell to span multiple rows</p>
+    <table border="1">
+    <tr>
+        <th>Header1</th>
+        <th>Header2</th>
+        <th>Header3</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Rowspan=Rows</td>
+        <td>Row1,cell2</td>
+        <td>Row1,cell3</td>
+    </tr>
+    <tr>
+        <td>Row2,cell2</td>
+        <td>Row2,cell3</td>
+    </tr>
+    </table>
+    <h2>Table with colspan</h2>
+    <p>The <code>colspan</code>attribute allows a cell to span multiple columns</p>
+    <table border="1"></table>
+    <tr>
+        <th>Header1</th>
+        <th>Header2</th>
+        <th>Header3</th>
+    </tr>
+    <tr>
+        <td>Row1,cell1</td>
+        <td colspan="2">colspan=colums</td>
+    </tr>
+    <tr>
+        <td>Row2,cell1</td>
+        <td>Row2,cell2</td>
+        <td>Row2,cell3</td>
+    </tr>
+</table>
+<h2>complex Table example</h2>
+<p>This table combines both <code> colspan </code>attribute.</p>
+        
+        
